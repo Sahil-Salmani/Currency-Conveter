@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top left, #00b4ff, #004bff);
+    padding: 20px;
+}
+
+.currency-box {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+    width: 100%;
+    max-width: 420px;
+
+    border-radius: 18px;
+    color: white;
+    padding: 30px 25px;
+}
+
+.currency-box h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 35px;
+    white-space: nowrap;
+}
+
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.dropdown img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.dropdown select {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.currency-box input {
+    padding: 14px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.currency-box p {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(226, 178, 44);
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.02);
+    background-color: rgb(240, 190, 50);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 500px) {
+
+    .currency-box {
+        padding: 25px 18px;
+    }
+
+    .currency-box h2 {
+        font-size: 22px;
+    }
+
+    .currency-box p {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
